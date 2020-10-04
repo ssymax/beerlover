@@ -1,0 +1,48 @@
+@keyframes appear {
+    0% {
+        opacity: 0;
+        top: 35px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px;
+    display: flex;
+    animation: appear 0.5s ease;
+}
+
+.image{
+    max-width: 100px;
+    max-height: 150px;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.imageNone {
+    @extend .image;
+    width: 75px;
+    background: url('https://www.ponteurope.com/wp-content/uploads/2017/08/10664---768x938.jpg')
+    no-repeat;
+    background-size: contain;
+}
+
+
+.description {
+    margin: 10px 0 20px;
+    font-weight: 300;
+}
+
+.button {
+    font-weight: 500;
+    text-decoration: none;
+    background: none;
+    border: 2px solid blue;
+    color: blue;
+    padding: 10px;
+}

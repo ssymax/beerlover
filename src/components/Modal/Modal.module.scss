@@ -1,0 +1,23 @@
+.wrapper {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 25vw;
+    height: 60vh;
+    background-color: rgb(106, 185, 106);
+    box-shadow: 0 10px 40px -10px black;
+    position: fixed;
+}
+
+.closeButton {
+    float: right;
+    right: 0;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    background: none;
+    border: none;
+}
